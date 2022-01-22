@@ -5,18 +5,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className = "btn">
+          <form action = "http://localhost:8080/topstories" method = "GET">
+            <div><button>Top Stories</button></div>
+          </form>
+
+          <form action = "http://localhost:8080/newstories" method = "GET">
+            <div><button>New Stories</button></div>
+          </form>
+
+          <form action = "http://localhost:8080/beststories" method = "GET">
+            <div><button>Best Stories</button></div>
+          </form>
+        </div>
       </header>
     </div>
   );
